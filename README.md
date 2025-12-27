@@ -2,153 +2,117 @@
 
 <div align="center">
 
-![CryptGuard Logo](screenshot/tela.png)
-
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/downloads/)
 [![Security](https://img.shields.io/badge/security-audited-green.svg)](SECURITY.md)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-**CryptGuard é uma solução avançada de criptografia com interface moderna, focada em segurança e usabilidade.**
+**CryptGuard is an advanced encryption solution with a modern interface, focused on security and usability.**
 
-[🚀 Começar](#-início-rápido) •
-[📖 Documentação](#-documentação) •
-[🛡️ Segurança](#%EF%B8%8F-segurança) •
-[🤝 Contribuir](#-contribuir) •
-[📜 Licença](#-licença)
+[🚀 Quick Start](#-quick-start) •
+[📖 Documentation](#-documentation) •
+[🛡️ Security](#-security) •
+[🤝 Contribute](#-contribute) •
+[📜 License](#-license)
 
 </div>
 
-## ✨ Características
+## ✨ Features
 
-- 🔒 **Criptografia Robusta**
-  - ChaCha20Poly1305 para criptografia autenticada
-  - Argon2id para derivação de chaves
-  - Reed-Solomon para correção de erros
+- 🔒 **Robust Encryption**
+  - ChaCha20Poly1305 for authenticated encryption
+  - Argon2id for key derivation
+  - Reed-Solomon for error correction
 
-- 🎯 **Funcionalidades Avançadas**
-  - Criptografia de texto e arquivos
-  - Suporte a múltiplos arquivos
-  - Volumes ocultos com negação plausível
-  - Tokens efêmeros para segurança adicional
+- 🎯 **Advanced Functionality**
+  - Text and file encryption
+  - Multi-file support
+  - Hidden volumes with plausible deniability
+  - Ephemeral tokens for added security
 
-- 💫 **Interface Moderna**
-  - Design inspirado nos apps da Meta
-  - Interface responsiva e intuitiva
-  - Feedback visual em tempo real
-  - Indicador de força de senha
+- 💫 **Modern Interface**
+  - Design inspired by Meta apps
+  - Responsive and intuitive UI
+  - Real-time visual feedback
+  - Password strength indicator
 
-- 🛡️ **Segurança Aprimorada**
-  - Verificação de força de senha via zxcvbn
-  - Suporte a arquivos-chave
-  - Metadados criptografados
-  - Proteção contra ataques conhecidos
+- 🛡️ **Enhanced Security**
+  - Password strength verification via zxcvbn
+  - Key file support
+  - Encrypted metadata
+  - Protection against known attacks
 
-## 🚀 Início Rápido
+## 🚀 Quick Start
 
-### Pré-requisitos
+### Prerequisites
 
-- Python 3.8 ou superior
-- pip (gerenciador de pacotes Python)
+- Python 3.8 or higher
+- pip (Python package manager)
 
-### Instalação
+### Installation
 
-1. Clone o repositório:
-```bash
-https://github.com/Crypt-Guard/CryptGuard.git
-cd cryptguard
-```
+1. Clone the repository:
+bash
+git clone https://github.com/Crypt-Guard/CryptGuard.git
+cd CryptGuard
 
-2. Instale as dependências:
-```bash
+
+2. Install dependencies:
+bash
 pip install -r requirements.txt
-```
 
-3. Execute o CryptGuard:
-```bash
+
+3. Run CryptGuard:
+bash
 python cryptguard_ui.py
-```
 
-## 💡 Guia de Uso
 
-### Criptografar Arquivo
+## 💡 Usage Guide
 
-1. Digite uma senha forte
-2. (Opcional) Configure parâmetros avançados do Argon2id
-3. Clique em "Criptografar Arquivo"
-4. Selecione o arquivo desejado
-5. Aguarde a confirmação de sucesso
+### Encrypt File
 
-### Descriptografar Arquivo
+1. Enter a strong password
+2. (Optional) Configure advanced Argon2id parameters
+3. Click "Encrypt File"
+4. Select the desired file
+5. Wait for success confirmation
 
-1. Digite a senha correta
-2. Clique em "Descriptografar Arquivo"
-3. Selecione o arquivo .encrypted
-4. O arquivo será restaurado com seu nome original
+### Decrypt File
 
-### Volumes Ocultos
+1. Enter the correct password
+2. Click "Decrypt File"
+3. Select the .encrypted file
+4. The file will be restored with its original name
 
-1. Prepare dois conjuntos de arquivos (falso e real)
-2. Use senhas diferentes para cada volume
-3. Guarde o token efêmero gerado
-4. Use o token para acessar o volume real
+### Hidden Volumes
 
-## 📖 Documentação
+1. Prepare two sets of files (decoy and real)
+2. Use different passwords for each volume
+3. Save the generated ephemeral token
+4. Use the token to access the real volume
 
-- [RoadMap](ROADMAP.md) - Funcionalidades e planos futuros
-- [Segurança](SECURITY.md) - Guia de segurança e melhores práticas
-- [Contribuição](CONTRIBUTING.md) - Como contribuir com o projeto
-- [Licença](LICENSE) - Termos de licenciamento
+## 📖 Documentation
 
-## 🛡️ Segurança
+- [RoadMap](ROADMAP.md) - Features and future plans
+- [Security](SECURITY.md) - Security guide and best practices
+- [Contributing](CONTRIBUTING.md) - How to contribute to the project
+- [License](LICENSE) - Licensing terms
 
-O CryptGuard foi projetado com foco em segurança, mas recomendamos:
+## 🛡️ Security
 
-- Realizar auditorias independentes
-- Seguir as melhores práticas de segurança
-- Manter backups dos dados importantes
-- Verificar a conformidade legal
+CryptGuard is designed with security in mind, but we recommend:
 
-Consulte [SECURITY.md](SECURITY.md) para mais informações.
+- Performing independent audits
+- Following security best practices
+- Keeping backups of important data
+- Verifying legal compliance
 
-## 🤝 Contribuir
+See [SECURITY.md](SECURITY.md) for more information.
 
-Contribuições são bem-vindas! Por favor, leia nosso [Guia de Contribuição](CONTRIBUTING.md).
+## 🤝 Contribute
 
-### Áreas de Contribuição
+Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
 
-- 📝 Documentação
-- 🐛 Correção de bugs
-- ✨ Novas funcionalidades
-- 🎨 Melhorias na interface
-- 🌐 Traduções
+## 📜 License
 
-## 📜 Licença
-
-CryptGuard é licenciado sob a [Licença Apache 2.0](LICENSE).
-
-## 📊 Status do Projeto
-
-- ✅ Interface gráfica moderna
-- ✅ Criptografia robusta
-- ✅ Documentação completa
-- 🚧 Suporte a diretórios
-- 🚧 Integração com nuvem
-- 🚧 Suporte a YubiKey
-
-## 🙏 Agradecimentos
-
-- Comunidade Python
-- Desenvolvedores das bibliotecas utilizadas
-- Contribuidores do projeto
-- Usuários que reportam bugs e sugerem melhorias
-
----
-
-<div align="center">
-
-**CryptGuard** - Desenvolvido com ❤️ pela comunidade
-
-[⬆ Voltar ao topo](#-cryptguard)
-
-</div>
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
